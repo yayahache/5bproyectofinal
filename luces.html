@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pantalla de Bienvenida — Carro de Luces</title>
+  <link rel="stylesheet" href="luces.css" />
+</head>
+<body>
+  <main class="welcome-card" role="main" aria-labelledby="bienvenido">
+    <section class="left">
+      <div class="brand">
+        <div class="logo logo-bounce">5B</div>
+        <div>
+          <h1 id="bienvenido">CBTIS 42 — Carro de Luces</h1>
+          <p>Proyecto del grupo <strong>5B Programación</strong> — Tema: Monster High</p>
+        </div>
+      </div>
+      <h2>¡Bienvenidos al despliegue luminoso!</h2>
+      <p class="lead">Aquí encontrarás la historia, especificaciones técnicas y el proceso creativo detrás del Carro de Luces del CBTIS 42.</p>
+      <div class="meta">
+        <span class="chip">📍 CBTIS 42</span>
+        <span class="chip">👩‍💻 Grupo: 5B</span>
+        <span class="chip">🎨 Tema: Monster High</span>
+      </div>
+      <div class="actions">
+        <button class="btn btn-primary" id="enterBtn">Ver información del carro</button>
+       <a href="luces2.html">  <button class="btn btn-outline" id="aboutBtn">Acerca del proyecto</button> </a> 
+      </div>
+    </section>
+
+    <aside class="right">
+      <div class="car-preview">
+        <svg class="skull" viewBox="0 0 24 24">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 1.7.56 3.27 1.5 4.5C6.42 14.38 6 15.64 6 17v.5c0 .83.67 1.5 1.5 1.5H9v1.5c0 .83.67 1.5 1.5 1.5h2c.83 0 1.5-.67 1.5-1.5V19.5h1.5c.83 0 1.5-.67 1.5-1.5V17c0-1.36-.42-2.62-1.5-3.5C18.44 12.27 19 10.7 19 9c0-3.87-3.13-7-7-7z" fill="white" opacity="0.95"/>
+        </svg>
+        <div class="car-graphic" id="carGraphic">CARRO DE LUCES</div>
+      </div>
+      <div class="car-legend">Panel LED • Arduino/ESP • Efectos RGB</div>
+    </aside>
+  </main>
+
+  <script src="luces.js"></script>
+</body>
+</html>
